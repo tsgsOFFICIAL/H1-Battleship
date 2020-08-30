@@ -11,6 +11,7 @@ namespace H1_Battleship
         private byte height;
         private byte maxShips = 5;
         private Field[,] fields;
+        private List<string> attemptedShootings = new List<string>();
         private List<Ship> ships = new List<Ship>();
         #endregion
 
@@ -53,6 +54,20 @@ namespace H1_Battleship
             get
             {
                 return ships;
+            }
+        }
+        /// <summary>
+        /// A complete list of all positions that have been shot at
+        /// </summary>
+        public List<string> AttemptedShootings
+        {
+            get
+            {
+                return attemptedShootings;
+            }
+            set
+            {
+                attemptedShootings.Add(value.ToString());
             }
         }
         #endregion
