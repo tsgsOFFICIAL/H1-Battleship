@@ -10,7 +10,7 @@ namespace H1_Battleship
         {
             Game Batteship = new Game();
 
-            //ShowRotatingMenu();
+            ShowRotatingMenu();
 
             while (true)
             {
@@ -30,11 +30,11 @@ namespace H1_Battleship
         static void ShowMainMenu()
         {
             Console.Clear();
-            //string[] msg = ReadAsciiFromFile($@"message/1.txt");
-            //foreach (string line in msg)
-            //{
-            //    Console.WriteLine(line);
-            //}
+            string[] msg = ReadAsciiFromFile($@"message/1.txt");
+            foreach (string line in msg)
+            {
+                Console.WriteLine(line);
+            }
             Console.WriteLine();
             Console.WriteLine("Press (1) to play");
             Console.WriteLine("Press (2) to exit");
